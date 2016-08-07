@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory
+        android:title="General Settings"
+        >
+        <SwitchPreference
+            android:key="notification"
+
+            android:title="Notificatons"
+            >
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:key="vibrate"
+
+            android:title="Vibrate"
+            >
+        </SwitchPreference>
+        <VolumePreference
+            android:summary="Set volume"
+            android:title="Sound"
+            android:key="setvolume">
+
+        </VolumePreference>
+    </PreferenceCategory>
+    <ListPreference
+        android:key="theme"
+        android:title="Themes"
+        android:entries="@array/theme"
+        android:defaultValue="1"
+        android:entryValues="@array/theme">
+        />
+    </ListPreference>
+    <PreferenceCategory
+        android:title="Invite"
+        >
+        <Preference
+            android:title="Invite by SMS"
+            android:key="sms">
+
+        </Preference>
+        <Preference
+            android:title="Invite by EMAIL"
+            android:key="email">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.gmail.com" />
+
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Support"
+        >
+        <Preference
+            android:title="Privacy Policy"
+            android:key="policy"
+
+            >
+
+        </Preference>
+        <Preference
+            android:title="Help"
+            android:key="help">
+
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

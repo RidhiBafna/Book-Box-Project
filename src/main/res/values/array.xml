@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme">
+        <item name="1">theme 1</item>
+        <item name="2">theme 2</item>
+        <item name="3">theme 3</item>
+        <item name="4">theme 4</item>
+    </string-array>
+</resources>
